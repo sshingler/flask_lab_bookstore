@@ -1,8 +1,24 @@
-body > h1 {
-    color:red;
-    background-color: black;
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem;
+}
+
+body > header {
+    color:rgb(101, 2, 2);
+    background-color: rgb(56, 123, 203);
+    padding: 0.5rem;
+    margin: 0rem;
+    border: 0rem;
+}
+
+main {
+    color: rgb(7, 5, 67);
+    background-color: rgb(152, 145, 145);
+    margin: 0rem;
+    border: 0rem;
 }
 
 p {
-    color: green;
+    margin: 0rem;
 }

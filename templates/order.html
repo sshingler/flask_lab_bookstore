@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
+    <header>
     <h1> Single order: </h1>
- 
-    <p>
-        {{order.customer_name}} {{order.order_date}} {{order.book_title}} {{order.quantity}}
-    </p>
-   
+    </header>
+    <main>
+        
+        {{order.customer_name}} : {{order.order_date}} : {{order.book_title}} : {{order.quantity}}
+        
+    </main>
 </body>
 </html>

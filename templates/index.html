@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Orders</title>
+    <title>List customer orders</title>
 </head>
 <body>
     <h1>Customer Order List</h1>
 
     {% for order in orders%} 
     <p>
-        {{order.customer_name}} {{order.order_date}} {{order.book_title}} {{order.quantity}}
+        <a href="/orders/0"> {{order.customer_name}} {{order.order_date}} {{order.book_title}} {{order.quantity}}</a>
+        
     </p>
     {% endfor %} 
 </body>

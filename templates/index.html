@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List customer orders</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <h1>Customer Order List</h1>
 
     {% for order in orders%} 
     <p>
-        <a href="/orders/0"> {{order.customer_name}} {{order.order_date}} {{order.book_title}} {{order.quantity}}</a>
+        {{order.customer_name}} {{order.order_date}} {{order.book_title}} {{order.quantity}}
         
     </p>
     {% endfor %} 
 </body>
 </html>
+
